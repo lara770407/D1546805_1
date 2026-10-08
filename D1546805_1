@@ -1,1 +1,35 @@
-
+x = int(input())
+if x < 0 or x > 15:
+    print("輸入錯誤")
+else:
+    count = x
+    b0 = count % 2
+    count = count // 2
+    b1 = count % 2
+    count = count // 2
+    b2 = count % 2
+    count = count // 2
+    b3 = count % 2
+    count2 = x
+    o0 = count2 % 8
+    count2 = count2 // 8
+    
+    o1 = count2 % 8
+    count3 = ""
+    if x == 10:
+        count3 = "A"
+    elif x == 11:
+        count3 = "B"
+    elif x == 12:
+        count3 = "C"
+    elif x == 13:
+        count3 = "D"
+    elif x == 14:
+        count3 = "E"
+    elif x == 15:
+        count3 = "F"
+    else:
+        count3 = str(x)
+    print(f"二進制={b3}{b2}{b1}{b0}")
+    print(f"八進制={o1}{o0}")
+    print(f"十六進制={count3}")
